@@ -13,161 +13,244 @@
 </head>
 <body>
   <!-- Progress bar -->
-  <div id="progressBar"></div>
+  <div id="progressBar" aria-hidden="true"></div>
 
   <!-- Hero -->
   <header class="hero text-center text-white">
     <div class="container position-relative py-5">
       <h1 class="display-5 fw-bold title-kn" data-aos="zoom-in">ಸಿಂಹ ಗರ್ಜನೆ ಗೆಳೆಯರ ಬಳಗ</h1>
-      <p class="lead mb-4 subtext" data-aos="fade-up" data-aos-delay="150">Simha Garjane Geleraya Balaga · ಗಣೇಶೋತ್ಸವ ಗ್ಯಾಲರಿ (2016–2024)</p>
+      <p class="lead mb-4 subtext" data-aos="fade-up" data-aos-delay="150">
+        Simha Garjane Geleraya Balaga · ಗಣೇಶೋತ್ಸವ ಗ್ಯಾಲರಿ (2016–2025)
+      </p>
       <a href="#gallery" class="btn btn-light btn-lg shadow-sm rounded-pill px-4" data-aos="fade-up" data-aos-delay="300">
         <i class="bi bi-images me-2"></i>View Gallery
       </a>
 
       <!-- Decorative floaters -->
-      <div class="floater floater-1">🪔</div>
-      <div class="floater floater-2">🌸</div>
-      <div class="floater floater-3">🎊</div>
+      <div class="floater floater-1" aria-hidden="true">🪔</div>
+      <div class="floater floater-2" aria-hidden="true">🌸</div>
+      <div class="floater floater-3" aria-hidden="true">🎊</div>
     </div>
   </header>
 
   <!-- Filters (scrollable chips) -->
   <section id="gallery" class="py-5">
     <div class="container">
-      <div class="chips mb-4" data-aos="fade-up">
-        <button class="chip active" data-year="all">All</button>
-        <button class="chip" data-year="2016">2016</button>
-        <button class="chip" data-year="2017">2017</button>
-        <button class="chip" data-year="2018">2018</button>
-        <button class="chip" data-year="2019">2019</button>
-        <button class="chip" data-year="2021">2021</button>
-        <button class="chip" data-year="2022">2022</button>
-        <button class="chip" data-year="2023">2023</button>
-        <button class="chip" data-year="2024">2024</button>
-        <button class="chip" data-year="2025">2025</button>
+      <div class="chips mb-4" data-aos="fade-up" role="tablist" aria-label="Filter by year">
+        <button class="chip active" data-year="all" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-year="2016" role="tab" aria-selected="false">2016</button>
+        <button class="chip" data-year="2017" role="tab" aria-selected="false">2017</button>
+        <button class="chip" data-year="2018" role="tab" aria-selected="false">2018</button>
+        <button class="chip" data-year="2019" role="tab" aria-selected="false">2019</button>
+        <button class="chip" data-year="2021" role="tab" aria-selected="false">2021</button>
+        <button class="chip" data-year="2022" role="tab" aria-selected="false">2022</button>
+        <button class="chip" data-year="2023" role="tab" aria-selected="false">2023</button>
+        <button class="chip" data-year="2024" role="tab" aria-selected="false">2024</button>
+        <button class="chip" data-year="2025" role="tab" aria-selected="false">2025</button>
       </div>
 
       <!-- Grid -->
       <div class="row g-4" id="grid">
+        <!-- 2016 -->
         <div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2016" data-aos="zoom-in" data-aos-delay="0">
-  <div class="card photo-card shadow-sm tilt">
-    <span class="glow"></span>
-    <img src="assets/images/2016.jpg" class="card-img-top" alt="Ganapati 2016">
-    <div class="card-body d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center gap-2">
-        <span class="badge bg-gradient">2016</span>
-        <span class="fw-semibold">Ganeshotsava</span>
-      </div>
-      <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2016.jpg" data-caption="2016"><i class="bi bi-arrows-fullscreen me-1"></i>View</button>
+          <div class="card photo-card shadow-sm tilt">
+            <span class="glow"></span>
+            <img src="assets/images/2016.jpg" class="card-img-top" alt="Ganapati 2016">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-gradient">2016</span>
+                <span class="fw-semibold">Ganeshotsava</span>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2016.jpg" data-caption="2016">
+                  <i class="bi bi-arrows-fullscreen me-1"></i>View
+                </button>
+                <a class="btn btn-outline-secondary btn-sm" href="assets/images/2016.jpg" download>
+                  <i class="bi bi-download"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2017 -->
+        <div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2017" data-aos="zoom-in" data-aos-delay="50">
+          <div class="card photo-card shadow-sm tilt">
+            <span class="glow"></span>
+            <img src="assets/images/2017.jpg" class="card-img-top" alt="Ganapati 2017">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-gradient">2017</span>
+                <span class="fw-semibold">Ganeshotsava</span>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2017.jpg" data-caption="2017">
+                  <i class="bi bi-arrows-fullscreen me-1"></i>View
+                </button>
+                <a class="btn btn-outline-secondary btn-sm" href="assets/images/2017.jpg" download>
+                  <i class="bi bi-download"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2018 -->
+        <div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2018" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card photo-card shadow-sm tilt">
+            <span class="glow"></span>
+            <img src="assets/images/2018.jpg" class="card-img-top" alt="Ganapati 2018">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-gradient">2018</span>
+                <span class="fw-semibold">Ganeshotsava</span>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2018.jpg" data-caption="2018">
+                  <i class="bi bi-arrows-fullscreen me-1"></i>View
+                </button>
+                <a class="btn btn-outline-secondary btn-sm" href="assets/images/2018.jpg" download>
+                  <i class="bi bi-download"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2019 -->
+        <div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2019" data-aos="zoom-in" data-aos-delay="150">
+          <div class="card photo-card shadow-sm tilt">
+            <span class="glow"></span>
+            <img src="assets/images/2019.jpg" class="card-img-top" alt="Ganapati 2019">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-gradient">2019</span>
+                <span class="fw-semibold">Ganeshotsava</span>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2019.jpg" data-caption="2019">
+                  <i class="bi bi-arrows-fullscreen me-1"></i>View
+                </button>
+                <a class="btn btn-outline-secondary btn-sm" href="assets/images/2019.jpg" download>
+                  <i class="bi bi-download"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2021 -->
+        <div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2021" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card photo-card shadow-sm tilt">
+            <span class="glow"></span>
+            <img src="assets/images/2021.jpg" class="card-img-top" alt="Ganapati 2021">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-gradient">2021</span>
+                <span class="fw-semibold">Ganeshotsava</span>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2021.jpg" data-caption="2021">
+                  <i class="bi bi-arrows-fullscreen me-1"></i>View
+                </button>
+                <a class="btn btn-outline-secondary btn-sm" href="assets/images/2021.jpg" download>
+                  <i class="bi bi-download"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2022 -->
+        <div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2022" data-aos="zoom-in" data-aos-delay="250">
+          <div class="card photo-card shadow-sm tilt">
+            <span class="glow"></span>
+            <img src="assets/images/2022.jpg" class="card-img-top" alt="Ganapati 2022">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-gradient">2022</span>
+                <span class="fw-semibold">Ganeshotsava</span>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2022.jpg" data-caption="2022">
+                  <i class="bi bi-arrows-fullscreen me-1"></i>View
+                </button>
+                <a class="btn btn-outline-secondary btn-sm" href="assets/images/2022.jpg" download>
+                  <i class="bi bi-download"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2023 -->
+        <div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2023" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card photo-card shadow-sm tilt">
+            <span class="glow"></span>
+            <img src="assets/images/2023.jpg" class="card-img-top" alt="Ganapati 2023">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-gradient">2023</span>
+                <span class="fw-semibold">Ganeshotsava</span>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2023.jpg" data-caption="2023">
+                  <i class="bi bi-arrows-fullscreen me-1"></i>View
+                </button>
+                <a class="btn btn-outline-secondary btn-sm" href="assets/images/2023.jpg" download>
+                  <i class="bi bi-download"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2024 -->
+        <div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2024" data-aos="zoom-in" data-aos-delay="350">
+          <div class="card photo-card shadow-sm tilt">
+            <span class="glow"></span>
+            <img src="assets/images/2024.jpg" class="card-img-top" alt="Ganapati 2024">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-gradient">2024</span>
+                <span class="fw-semibold">Ganeshotsava</span>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2024.jpg" data-caption="2024">
+                  <i class="bi bi-arrows-fullscreen me-1"></i>View
+                </button>
+                <a class="btn btn-outline-secondary btn-sm" href="assets/images/2024.jpg" download>
+                  <i class="bi bi-download"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2025 (moved inside the row) -->
+        <div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2025" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card photo-card shadow-sm tilt">
+            <span class="glow"></span>
+            <img src="assets/images/2025.jpg" class="card-img-top" alt="Ganapati 2025">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-gradient">2025</span>
+                <span class="fw-semibold">Ganeshotsava</span>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2025.jpg" data-caption="2025">
+                  <i class="bi bi-arrows-fullscreen me-1"></i>View
+                </button>
+                <a class="btn btn-outline-secondary btn-sm" href="assets/images/2025.jpg" download>
+                  <i class="bi bi-download"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- /row -->
     </div>
-  </div>
-</div>
-<div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2017" data-aos="zoom-in" data-aos-delay="50">
-  <div class="card photo-card shadow-sm tilt">
-    <span class="glow"></span>
-    <img src="assets/images/2017.jpg" class="card-img-top" alt="Ganapati 2017">
-    <div class="card-body d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center gap-2">
-        <span class="badge bg-gradient">2017</span>
-        <span class="fw-semibold">Ganeshotsava</span>
-      </div>
-      <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2017.jpg" data-caption="2017"><i class="bi bi-arrows-fullscreen me-1"></i>View</button>
-    </div>
-  </div>
-</div>
-<div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2018" data-aos="zoom-in" data-aos-delay="100">
-  <div class="card photo-card shadow-sm tilt">
-    <span class="glow"></span>
-    <img src="assets/images/2018.jpg" class="card-img-top" alt="Ganapati 2018">
-    <div class="card-body d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center gap-2">
-        <span class="badge bg-gradient">2018</span>
-        <span class="fw-semibold">Ganeshotsava</span>
-      </div>
-      <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2018.jpg" data-caption="2018"><i class="bi bi-arrows-fullscreen me-1"></i>View</button>
-    </div>
-  </div>
-</div>
-<div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2019" data-aos="zoom-in" data-aos-delay="150">
-  <div class="card photo-card shadow-sm tilt">
-    <span class="glow"></span>
-    <img src="assets/images/2019.jpg" class="card-img-top" alt="Ganapati 2019">
-    <div class="card-body d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center gap-2">
-        <span class="badge bg-gradient">2019</span>
-        <span class="fw-semibold">Ganeshotsava</span>
-      </div>
-      <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2019.jpg" data-caption="2019"><i class="bi bi-arrows-fullscreen me-1"></i>View</button>
-    </div>
-  </div>
-</div>
-<div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2021" data-aos="zoom-in" data-aos-delay="200">
-  <div class="card photo-card shadow-sm tilt">
-    <span class="glow"></span>
-    <img src="assets/images/2021.jpg" class="card-img-top" alt="Ganapati 2021">
-    <div class="card-body d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center gap-2">
-        <span class="badge bg-gradient">2021</span>
-        <span class="fw-semibold">Ganeshotsava</span>
-      </div>
-      <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2021.jpg" data-caption="2021"><i class="bi bi-arrows-fullscreen me-1"></i>View</button>
-    </div>
-  </div>
-</div>
-<div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2022" data-aos="zoom-in" data-aos-delay="250">
-  <div class="card photo-card shadow-sm tilt">
-    <span class="glow"></span>
-    <img src="assets/images/2022.jpg" class="card-img-top" alt="Ganapati 2022">
-    <div class="card-body d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center gap-2">
-        <span class="badge bg-gradient">2022</span>
-        <span class="fw-semibold">Ganeshotsava</span>
-      </div>
-      <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2022.jpg" data-caption="2022"><i class="bi bi-arrows-fullscreen me-1"></i>View</button>
-    </div>
-  </div>
-</div>
-<div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2023" data-aos="zoom-in" data-aos-delay="300">
-  <div class="card photo-card shadow-sm tilt">
-    <span class="glow"></span>
-    <img src="assets/images/2023.jpg" class="card-img-top" alt="Ganapati 2023">
-    <div class="card-body d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center gap-2">
-        <span class="badge bg-gradient">2023</span>
-        <span class="fw-semibold">Ganeshotsava</span>
-      </div>
-      <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2023.jpg" data-caption="2023"><i class="bi bi-arrows-fullscreen me-1"></i>View</button>
-    </div>
-  </div>
-</div>
-<div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2024" data-aos="zoom-in" data-aos-delay="350">
-  <div class="card photo-card shadow-sm tilt">
-    <span class="glow"></span>
-    <img src="assets/images/2024.jpg" class="card-img-top" alt="Ganapati 2024">
-    <div class="card-body d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center gap-2">
-        <span class="badge bg-gradient">2024</span>
-        <span class="fw-semibold">Ganeshotsava</span>
-      </div>
-      <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2024.jpg" data-caption="2024"><i class="bi bi-arrows-fullscreen me-1"></i>View</button>
-    </div>
-  </div>
-</div>
-      </div>
-    </div>
-    <div class="col-12 col-sm-6 col-lg-4 grid-item" data-year="2025" data-aos="zoom-in" data-aos-delay="100">
-  <div class="card photo-card shadow-sm tilt">
-    <span class="glow"></span>
-    <img src="assets/images/2025.jpg" class="card-img-top" alt="Ganapati 2025">
-    <div class="card-body d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center gap-2">
-        <span class="badge bg-gradient">2025</span>
-        <span class="fw-semibold">Ganeshotsava</span>
-      </div>
-      <button class="btn btn-primary btn-sm view-btn" data-src="assets/images/2025.jpg" data-caption="2025"><i class="bi bi-arrows-fullscreen me-1"></i>View</button>
-    </div>
-  </div>
-</div>
   </section>
 
   <!-- Lightbox with next/prev -->
